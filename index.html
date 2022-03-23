@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TripGuide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,700&family=Open+Sans:wght@700&family=Poppins:wght@600&family=Roboto:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Phần bao lại tất cả -->
+    <div class="wrapper">
+      <!-- Phần header -->
+      <header class="header">
+        <div class="container">
+          <div class="header-container">
+            <a href="index.html" class="header-link">
+              <img src="images/logo.png" alt="" class="header-logo" />
+              <span class="header-text">TripGuide</span>
+            </a>
+            <i class="fa fa-bars header-toggle"></i>
+            <div class="header-menu">
+              <span class="header-money">USD</span>
+              <img src="images/usa.png" alt="" class="header-country" />
+              <img src="images/notification.png" alt="" class="header-noti" />
+              <img
+                src="images/Rectangle 2204.png"
+                alt=""
+                class="header-border"
+              />
+              <div class="header-author">
+                <img src="images/avatar.png" alt="" class="header-avatar" />
+                <span class="header-name">Delowar</span>
+              </div>
+              <img src="images/dropdown.png" alt="" class="header-arrow-down" />
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Phần header -->
+
+      <!-- Phần main -->
+      <main>
+        <!-- Phần book -->
+        <section class="book">
+          <div class="container">
+            <div class="book-container">
+              <h1 class="book-heading">
+                Book With Us And Enjoy your Journey !
+              </h1>
+              <div class="book-frame">
+                <div class="book-meta">
+                  <div class="book-meta-item">
+                    <img src="images/Icon.png" alt="" />
+                    <span>Hotel</span>
+                  </div>
+                  <div class="book-meta-item">
+                    <img src="images/Plane.png" alt="" />
+                    <span>Flight</span>
+                  </div>
+                  <div class="book-meta-item">
+                    <img src="images/taxi.png" alt="" />
+                    <span>Car Rental</span>
+                  </div>
+                </div>
+                <div class="book-list">
+                  <div class="book-dropdown">
+                    <div class="book-dropdown-select">
+                      <span class="book-dropdown-location">Location</span>
+                      <p class="book-dropdown-from">Where are you from?</p>
+                    </div>
+                    <ul class="book-dropdown-list">
+                      <li class="book-dropdown-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div class="book-dropdown-info">
+                          <span>Bangladesh</span>
+                          <p>Hotel Sea Crown</p>
+                        </div>
+                      </li>
+                      <li class="book-dropdown-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div class="book-dropdown-info">
+                          <span>Viet Nam</span>
+                          <p>Long Beach Hotel</p>
+                        </div>
+                      </li>
+                      <li class="book-dropdown-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div class="book-dropdown-info">
+                          <span>India</span>
+                          <p>Vivanta Goa, Panaji</p>
+                        </div>
+                      </li>
+                      <li class="book-dropdown-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div class="book-dropdown-info">
+                          <span>Italy</span>
+                          <p>Cala di Volpe, Sardinia</p>
+                        </div>
+                      </li>
+                      <li class="book-dropdown-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div class="book-dropdown-info">
+                          <span>Switzerland</span>
+                          <p>Wilson President, Geneva</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <form class="book-checkin">
+                    <span>Check in</span>
+                    <p>Add Date(dd/MM/yyyy):</p>
+                    <input type="text" name="" id="" class="book-input" />
+                  </form>
+                  <form class="book-checkout">
+                    <span>Check out</span>
+                    <p>Add Date(dd/MM/yyyy):</p>
+                    <input type="text" name="" id="" class="book-input" />
+                  </form>
+                  <div class="book-click">
+                    <a href="#" class="book-search">Search</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Phần book -->
+
+        <!-- Phần stay -->
+        <section class="stay">
+          <div class="container">
+            <div class="stay-container">
+              <div class="stay-info">
+                <span>Home</span>
+                <i class="fa fa-angle-right"></i>
+                <span>Hotel list</span>
+                <i class="fa fa-angle-right"></i>
+                <span>Hotel details</span>
+              </div>
+              <h1 class="stay-heading">
+                Switzerland Hotels and Places to Stay
+              </h1>
+              <div class="stay-meta">
+                <div class="stay-meta-item">
+                  <i class="fa fa-star"></i>
+                  <span> 4.8 (122 reviews) </span>
+                </div>
+                <div class="stay-meta-item">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>Zuich town, Switzerland</span>
+                </div>
+              </div>
+              <ul class="stay-list">
+                <li class="stay-item">
+                  <img
+                    src="images/Mask Group (3).png"
+                    alt=""
+                    class="stay-image"
+                  />
+                </li>
+                <li class="stay-item">
+                  <img
+                    src="images/Mask Group (4).png"
+                    alt=""
+                    class="stay-image"
+                  />
+                </li>
+                <li class="stay-item">
+                  <img
+                    src="images/Mask Group (5).png"
+                    alt=""
+                    class="stay-image"
+                  />
+                </li>
+                <li class="stay-item">
+                  <img
+                    src="images/Mask Group (6).png"
+                    alt=""
+                    class="stay-image"
+                  />
+                </li>
+              </ul>
+              <div class="stay-infors">
+                <span>5.0</span>
+                <span>Perfect</span>
+                <span>Hotels</span>
+                <span>Building</span>
+                <span>Top value</span>
+                <img src="images/review.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Phần stay -->
+
+        <!-- Phần house -->
+        <section class="house">
+          <div class="container">
+            <div class="house-container">
+              <div class="house-left">
+                <h1 class="house-heading">Exclusive room in house</h1>
+                <span class="house-country">Zuich, Switzerland</span>
+                <ul class="house-choice">
+                  <li class="house-item">
+                    <a href="#" class="house-link">Description</a>
+                  </li>
+                  <li class="house-item">
+                    <a href="#" class="house-link">Features</a>
+                  </li>
+                  <li class="house-item">
+                    <a href="#" class="house-link">Room & Price</a>
+                  </li>
+                  <li class="house-item">
+                    <a href="#" class="house-link">Review</a>
+                  </li>
+                </ul>
+                <p class="house-desc text">
+                  Arabian Park Hotel is a great choice for travellers looking
+                  for a 3 star hotel in Dubai. It is located in Bur Dubai. This
+                  Hotel stands out as one of the highly recom.2 kms), Al Wasl
+                  Indoor Stadium (1.2 kms), Dubai Mall (5.4 kms), Jumeirah Beach
+                  Park (9.6 kms) and Jumeirah Public Beach (15.8 kms).
+                </p>
+                <div class="house-feature">
+                  <h3 class="house-feature-heading">Hotel features</h3>
+                  <div class="house-feature-list">
+                    <div class="house-feature-item">
+                      <img src="images/wifi.png" alt="" />
+                      <span>Wifi</span>
+                    </div>
+                    <div class="house-feature-item">
+                      <img src="images/Vector (1).png" alt="" />
+                      <span>Bathup</span>
+                    </div>
+                    <div class="house-feature-item">
+                      <img src="images/Vector (2).png" alt="" />
+                      <span>Breakfast</span>
+                    </div>
+                    <div class="house-feature-item">
+                      <img src="images/Vector (3).png" alt="" />
+                      <span>Kins bed</span>
+                    </div>
+                    <div class="house-feature-item">
+                      <img src="images/Vector (4).png" alt="" />
+                      <span>4m x 6m</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="house-amenity">
+                  <h3 class="house-amenity-heading">Amenities</h3>
+                  <div class="house-amenity-list">
+                    <div class="house-amenity-column">
+                      <div class="house-amenity-item">
+                        <img src="images/wifi.png" alt="" />
+                        <span>Free wifi 24/7</span>
+                      </div>
+                      <div class="house-amenity-item">
+                        <img src="images/Vector (5).png" alt="" />
+                        <span>Free computer</span>
+                      </div>
+                      <div class="house-amenity-item">
+                        <img src="images/Group 1370.png" alt="" />
+                        <span>Free wifi 24/7</span>
+                      </div>
+                      <div class="house-amenity-item">
+                        <img src="images/Vector (6).png" alt="" />
+                        <span>Free wifi 24/7</span>
+                      </div>
+                    </div>
+                    <div class="house-amenity-column">
+                      <div class="house-amenity-item">
+                        <img src="images/Vector (1).png" alt="" />
+                        <span>Free wifi 24/7</span>
+                      </div>
+                      <div class="house-amenity-item">
+                        <img src="images/Vector (7).png" alt="" />
+                        <span>Free computer</span>
+                      </div>
+                      <div class="house-amenity-item">
+                        <img src="images/Vector (8).png" alt="" />
+                        <span>Free wifi 24/7</span>
+                      </div>
+                      <div class="house-amenity-item">
+                        <img src="images/Vector (9).png" alt="" />
+                        <span>Free wifi 24/7</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="house-more">More details</a>
+              </div>
+              <div class="house-right">
+                <div class="house-frame">
+                  <div class="house-money">
+                    <h4 class="house-prices">$142 <span>/night $184</span></h4>
+                    <span class="house-sale">20% OFF</span>
+                  </div>
+                  <form class="house-form">
+                    <div class="house-row">
+                      <div class="house-group">
+                        <label for="checkin" class="house-label"
+                          >Check-In</label
+                        >
+                        <input
+                          type="date"
+                          name=""
+                          id="checkin"
+                          class="house-input"
+                        />
+                      </div>
+                      <div class="house-group">
+                        <label for="checkout" class="house-label"
+                          >Check-Out</label
+                        >
+                        <input
+                          type="date"
+                          name=""
+                          id="checkout"
+                          class="house-input"
+                        />
+                      </div>
+                    </div>
+                    <div class="house-group-select">
+                      <label for="guest" class="house-label">Guest</label>
+                      <select name="" id="guest">
+                        <option>1 Adults, 2 Children</option>
+                        <option>2 Adults, 1 Children</option>
+                        <option>2 Adults, 2 Children</option>
+                        <option>3 Adults, 3 Children</option>
+                        <option>4 Adults, 2 Children</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="house-extra">
+                      <h4 class="house-extra-heading">Extra Features</h4>
+                      <div class="house-extra-info">
+                        <div class="house-extra-group">
+                          <input
+                            type="checkbox"
+                            name=""
+                            id="checkbox1"
+                            class="house-extra-input"
+                          />
+                          <label for="checkbox1" class="house-extra-label"
+                            >Allow to bring pet</label
+                          >
+                          <span class="house-extra-price">$13</span>
+                        </div>
+                        <div class="house-extra-group">
+                          <input
+                            type="checkbox"
+                            name=""
+                            id="checkbox2"
+                            class="house-extra-input"
+                          />
+                          <label for="checkbox2" class="house-extra-label"
+                            >Breakfast a day per person</label
+                          >
+                          <span class="house-extra-price">$10</span>
+                        </div>
+                        <div class="house-extra-group">
+                          <input
+                            type="checkbox"
+                            name=""
+                            id="checkbox3"
+                            class="house-extra-input"
+                          />
+                          <label for="checkbox3" class="house-extra-label"
+                            >Parking a day</label
+                          >
+                          <span class="house-extra-price">$6</span>
+                        </div>
+                        <div class="house-extra-group">
+                          <input
+                            type="checkbox"
+                            name=""
+                            id="checkbox4"
+                            class="house-extra-input"
+                          />
+                          <label for="checkbox4" class="house-extra-label"
+                            >Extra pillow</label
+                          >
+                          <span class="house-extra-price">Free</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="house-price">
+                      <h4 class="house-price-heading">Price</h4>
+                      <div class="house-price-frame">
+                        <div class="house-price-services">
+                          <div class="house-price-item">
+                            <p>1 Nights</p>
+                            <span>$500</span>
+                          </div>
+                          <div class="house-price-item">
+                            <p>Discount 20%</p>
+                            <span>$200</span>
+                          </div>
+                          <div class="house-price-item">
+                            <p>Breakfast a day per person</p>
+                            <span>$10</span>
+                          </div>
+                          <div class="house-price-item">
+                            <p>Service fee</p>
+                            <span>$5</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="house-total">
+                      <p class="house-total-text">Total payment</p>
+                      <span class="house-total-price">$300</span>
+                    </div>
+                    <button class="house-now">Book Now</button>
+                    <a href="#" class="house-yet"
+                      >You will not get charged yet</a
+                    >
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Phần house -->
+
+        <!-- Phần room -->
+        <section class="room">
+          <div class="container">
+            <div class="room-container">
+              <h3 class="room-heading">Select Room</h3>
+              <div class="room-list">
+                <div class="room-row">
+                  <div class="room-row-left">
+                    <h3 class="room-row-caption">
+                      Economy Room, Annex Building
+                    </h3>
+                    <span class="room-offer">Offer conditions:</span>
+                    <div class="room-row-item">
+                      <img src="images/Vector.png" alt="" />
+                      <span>Non-refundable</span>
+                    </div>
+                    <div class="room-row-item">
+                      <img src="images/Vector.png" alt="" />
+                      <span>Free Wifi</span>
+                    </div>
+                    <div class="room-row-item">
+                      <img src="images/Vector.png" alt="" />
+                      <span>Breakfast for 2 people</span>
+                    </div>
+                  </div>
+                  <div class="room-row-right">
+                    <div class="room-row-info">
+                      <h3 class="room-row-money">$102 <span>/night</span></h3>
+                      <span class="room-save">Save $4</span>
+                      <span class="room-on">on TripGuide.com $106</span>
+                      <a href="#" class="room-select">Select</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="room-row">
+                  <div class="room-row-left">
+                    <h3 class="room-row-caption">Double Room</h3>
+                    <span class="room-offer">Offer conditions:</span>
+                    <div class="room-row-item">
+                      <img src="images/Vector.png" alt="" />
+                      <span>Non-refundable</span>
+                    </div>
+                    <div class="room-row-item">
+                      <img src="images/Vector.png" alt="" />
+                      <span>Free Wifi</span>
+                    </div>
+                    <div class="room-row-item">
+                      <img src="images/Vector.png" alt="" />
+                      <span>Breakfast for 3 people</span>
+                    </div>
+                  </div>
+                  <div class="room-row-right">
+                    <div class="room-row-info">
+                      <h3 class="room-row-money">$102 <span>/night</span></h3>
+                      <span class="room-save">Save $4</span>
+                      <span class="room-on">on TripGuide.com $106</span>
+                      <a href="#" class="room-select">Select</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="room-row">
+                  <div class="room-row-left">
+                    <h3 class="room-row-caption">Premium Badroom</h3>
+                    <span class="room-offer">Offer conditions:</span>
+                    <div class="room-row-columns">
+                      <div class="room-row-column">
+                        <div class="room-row-item">
+                          <img src="images/Vector.png" alt="" />
+                          <span>Free Cancelations</span>
+                        </div>
+                        <div class="room-row-item">
+                          <img src="images/Vector.png" alt="" />
+                          <span>Airconditioning</span>
+                        </div>
+                        <div class="room-row-item">
+                          <img src="images/Vector.png" alt="" />
+                          <span>Breakfast for 3 people</span>
+                        </div>
+                      </div>
+                      <div class="room-row-column">
+                        <div class="room-row-item">
+                          <img src="images/Vector.png" alt="" />
+                          <span>Flat-Screen TV</span>
+                        </div>
+                        <div class="room-row-item">
+                          <img src="images/Vector.png" alt="" />
+                          <span>Free Wifi</span>
+                        </div>
+                        <div class="room-row-item">
+                          <img src="images/Vector.png" alt="" />
+                          <span>Badroom</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="room-row-right">
+                    <div class="room-row-info">
+                      <h3 class="room-row-money">$201 <span>/night</span></h3>
+                      <span class="room-save">Save $4</span>
+                      <span class="room-on">on TripGuide.com $206</span>
+                      <a href="#" class="room-select">Select</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Phần room -->
+
+        <!-- Phần attach -->
+        <section class="attach">
+          <div class="container">
+            <div class="attach-container">
+              <div class="attach-top">
+                <h2 class="attach-heading">Attach your Review</h2>
+                <img src="images/review2.png" alt="" />
+              </div>
+              <form class="attach-main">
+                <textarea
+                  name=""
+                  id=""
+                  class="attach-textarea"
+                  placeholder="Write your detailed review here..."
+                ></textarea>
+                <div class="attach-btn">
+                  <button class="attach-cancel">Cancel</button>
+                  <button class="attach-submit">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <!-- Phần attach -->
+
+        <!-- Phần latest -->
+        <section class="latest">
+          <div class="container">
+            <div class="latest-container">
+              <h3 class="latest-heading">Latest Reviews</h3>
+              <div class="latest-list">
+                <div class="latest-item">
+                  <div class="latest-row">
+                    <div class="latest-row-left">
+                      <img src="images/Ellipse 384.png" alt="" />
+                      <div class="latest-info">
+                        <h4 class="latest-name">Patricia W. Fenster</h4>
+                        <span class="latest-country">Kuwait</span>
+                        <span class="latest-interactive"
+                          >45 Follower, 68 Reviews
+                        </span>
+                      </div>
+                    </div>
+                    <div class="latest-row-right">
+                      <div class="latest-row-time">
+                        <img src="images/review3.png" alt="" />
+                        <span>25.5.2020</span>
+                      </div>
+                      <p class="latest-desc text">
+                        We hod the most spectoculor view. Unfortunately it was
+                        very hot in the room from 2-8.30 pm due to no air
+                        conditioning and no shade.
+                      </p>
+                      <div class="latest-click">
+                        <a href="#" class="latest-cmt">Comment</a>
+                        <a href="#" class="latest-like">Like</a>
+                        <a href="#" class="latest-reply">Reply</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="latest-item">
+                  <div class="latest-row">
+                    <div class="latest-row-left">
+                      <img src="images/Ellipse 385.png" alt="" />
+                      <div class="latest-info">
+                        <h4 class="latest-name">Patricia W. Fenster</h4>
+                        <span class="latest-country">Kuwait</span>
+                        <span class="latest-interactive"
+                          >45 Follower, 68 Reviews
+                        </span>
+                      </div>
+                    </div>
+                    <div class="latest-row-right">
+                      <div class="latest-row-time">
+                        <img src="images/review3.png" alt="" />
+                        <span>25.5.2020</span>
+                      </div>
+                      <p class="latest-desc text">
+                        We hod the most spectoculor view. Unfortunately it was
+                        very hot in the room from 2-8.30 pm due to no air
+                        conditioning and no shade.
+                      </p>
+                      <div class="latest-click">
+                        <a href="#" class="latest-cmt">Comment</a>
+                        <a href="#" class="latest-like">Like</a>
+                        <a href="#" class="latest-reply">Reply</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="latest-item">
+                  <div class="latest-row">
+                    <div class="latest-row-left">
+                      <img src="images/Ellipse 386.png" alt="" />
+                      <div class="latest-info">
+                        <h4 class="latest-name">Patricia W. Fenster</h4>
+                        <span class="latest-country">Kuwait</span>
+                        <span class="latest-interactive"
+                          >45 Follower, 68 Reviews
+                        </span>
+                      </div>
+                    </div>
+                    <div class="latest-row-right">
+                      <div class="latest-row-time">
+                        <img src="images/review3.png" alt="" />
+                        <span>25.5.2020</span>
+                      </div>
+                      <p class="latest-desc text">
+                        We hod the most spectoculor view. Unfortunately it was
+                        very hot in the room from 2-8.30 pm due to no air
+                        conditioning and no shade.
+                      </p>
+                      <div class="latest-click">
+                        <a href="#" class="latest-cmt">Comment</a>
+                        <a href="#" class="latest-like">Like</a>
+                        <a href="#" class="latest-reply">Reply</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="latest-all">
+                <div class="latest-image">
+                  <img src="images/Group.png" alt="" />
+                </div>
+                <a href="#">View All</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Phần latest -->
+
+        <!-- Phần trending -->
+        <section class="trending">
+          <div class="container">
+            <div class="trending-container">
+              <h1 class="trending-heading">Trending Hotels</h1>
+              <ul class="trending-list">
+                <li class="trending-item">
+                  <img
+                    src="images/trending1.png"
+                    alt=""
+                    class="trending-image"
+                  />
+                  <div class="trending-infos">
+                    <span class="trending-position">Hotel Sea Crown</span>
+                    <div class="trending-meta">
+                      <i class="fa fa-star"></i>
+                      <span>4.8 (122 reviews)</span>
+                    </div>
+                    <div class="trending-info">
+                      <img src="images/avator.png" alt="" />
+                      <span>50+ go on this hotel</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="trending-item">
+                  <img
+                    src="images/trending2.png"
+                    alt=""
+                    class="trending-image"
+                  />
+                  <div class="trending-infos">
+                    <span class="trending-position">Long Beach Hotel</span>
+                    <div class="trending-meta">
+                      <i class="fa fa-star"></i>
+                      <span>4.8 (122 reviews)</span>
+                    </div>
+                    <div class="trending-info">
+                      <img src="images/avator.png" alt="" />
+                      <span>50+ go on this hotel</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="trending-item">
+                  <img
+                    src="images/trending3.png"
+                    alt=""
+                    class="trending-image"
+                  />
+                  <div class="trending-infos">
+                    <span class="trending-position">Hotel The Cox Today</span>
+                    <div class="trending-meta">
+                      <i class="fa fa-star"></i>
+                      <span>4.8 (122 reviews)</span>
+                    </div>
+                    <div class="trending-info">
+                      <img src="images/avator.png" alt="" />
+                      <span>50+ go on this hotel</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="trending-item">
+                  <img
+                    src="images/trending4.png"
+                    alt=""
+                    class="trending-image"
+                  />
+                  <div class="trending-infos">
+                    <span class="trending-position">Vivanta Goa, Panaji</span>
+                    <div class="trending-meta">
+                      <i class="fa fa-star"></i>
+                      <span>4.8 (122 reviews)</span>
+                    </div>
+                    <div class="trending-info">
+                      <img src="images/avator.png" alt="" />
+                      <span>50+ go on this hotel</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- Phần trending -->
+
+        <!-- Phần find -->
+        <section class="find">
+          <div class="container">
+            <div class="find-container">
+              <div class="find-wrap">
+                <div class="find-top">
+                  <h1 class="find-heading">Find 250+ Hotels</h1>
+                  <ul class="find-choice-list">
+                    <li class="find-choice-item">
+                      <a href="#" class="find-choice-link">Popular</a>
+                    </li>
+                    <li class="find-choice-item">
+                      <a href="#" class="find-choice-link">Guest Ratings</a>
+                    </li>
+                    <li class="find-choice-item">
+                      <a href="#" class="find-choice-link">Pricer</a>
+                    </li>
+                    <li class="find-choice-item">
+                      <a href="#" class="find-choice-link">Map View</a>
+                    </li>
+                  </ul>
+                </div>
+                <ul class="find-list">
+                  <li class="find-item">
+                    <img src="images/Mask Group (7).png" alt="" />
+                    <h3 class="find-caption">Green House Guest House</h3>
+                    <div class="find-meta">
+                      <i class="fa fa-star"></i>
+                      <span>4.8 (12 reviews)</span>
+                    </div>
+                    <div class="find-services">
+                      <div class="find-service">
+                        <img src="images/wifi.png" alt="" />
+                        <span>Free wifi</span>
+                      </div>
+                      <div class="find-service">
+                        <img src="images/Vector (7).png" alt="" />
+                        <span>Breakfast included</span>
+                      </div>
+                    </div>
+                    <span class="find-total">$260 total</span>
+                  </li>
+                  <li class="find-item">
+                    <img src="images/Mask Group (8).png" alt="" />
+                    <h3 class="find-caption">Green House Guest House</h3>
+                    <div class="find-meta">
+                      <i class="fa fa-star"></i>
+                      <span>4.8 (12 reviews)</span>
+                    </div>
+                    <div class="find-services">
+                      <div class="find-service">
+                        <img src="images/wifi.png" alt="" />
+                        <span>Free wifi</span>
+                      </div>
+                      <div class="find-service">
+                        <img src="images/Vector (7).png" alt="" />
+                        <span>Breakfast included</span>
+                      </div>
+                    </div>
+                    <span class="find-total">$260 total</span>
+                  </li>
+                  <li class="find-item">
+                    <img src="images/Mask Group (9).png" alt="" />
+                    <h3 class="find-caption">Green House Guest House</h3>
+                    <div class="find-meta">
+                      <i class="fa fa-star"></i>
+                      <span>4.8 (12 reviews)</span>
+                    </div>
+                    <div class="find-services">
+                      <div class="find-service">
+                        <img src="images/wifi.png" alt="" />
+                        <span>Free wifi</span>
+                      </div>
+                      <div class="find-service">
+                        <img src="images/Vector (7).png" alt="" />
+                        <span>Breakfast included</span>
+                      </div>
+                    </div>
+                    <span class="find-total">$260 total</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Phần find -->
+      </main>
+      <!-- Phần main -->
+
+      <!-- Phần footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-container">
+            <div class="footer-offer">
+              <div class="footer-info">
+                <h1 class="footer-offer-heading">Get our pro offers</h1>
+                <p class="footer-offer-desc">
+                  Create a visual identity for your company, and an overall
+                  brand
+                </p>
+              </div>
+              <form class="footer-form">
+                <input
+                  type="email"
+                  class="footer-input"
+                  placeholder="Type your email here"
+                />
+                <button class="footer-sub">Subscribe</button>
+              </form>
+            </div>
+          </div>
+          <div class="footer-wrap">
+            <div class="footer-choice">
+              <div class="footer-column">
+                <a href="index.html" class="footer-logo">
+                  <img src="images/logo.png" alt="" />
+                  <span>TripGuide</span>
+                </a>
+                <p class="footer-desc">
+                  This is the team that specializes in making sure in the find
+                  it a your interior looks cool
+                </p>
+                <a href="#">
+                  <img
+                    src="images/color mode.png"
+                    alt=""
+                    class="footer-image"
+                  />
+                </a>
+              </div>
+              <div class="footer-column">
+                <ul class="footer-list">
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Services</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Travel Booking</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Flight Booking</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Car Booking</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Fivestar Hotel</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Traveling</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <ul class="footer-list">
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Support</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Account</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Legal</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Contact</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Terms & Condition</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <ul class="footer-list">
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Business</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Success</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">About Locato</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Blog</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Information</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="#" class="footer-link">Travel Guide</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Phần footer -->
+    </div>
+    <!-- Lớp bao lại tất cả -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

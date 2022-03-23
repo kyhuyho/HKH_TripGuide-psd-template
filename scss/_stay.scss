@@ -1,0 +1,204 @@
+.stay {
+  margin-top: 23rem;
+  &-container {
+    padding: 0 6rem;
+  }
+  &-info {
+    & > * {
+      font-size: 1.4rem;
+      margin-left: 1rem;
+    }
+    span:last-child {
+      color: #b1b5c4;
+    }
+  }
+  &-heading {
+    margin-top: 1.8rem;
+    font-size: 4.8rem;
+    line-height: calc(70 / 48);
+    font-weight: 700;
+  }
+  &-meta {
+    display: flex;
+    align-items: center;
+  }
+  &-meta-item:first-child {
+    i {
+      color: #ffc542;
+      font-size: 1.4rem;
+      margin-right: 5px;
+    }
+    span {
+      font-size: 1.4rem;
+      color: #353945;
+    }
+  }
+  &-meta-item:last-child {
+    margin-left: 2rem;
+    i {
+      font-size: 1.4rem;
+      margin-right: 5px;
+    }
+    span {
+      font-size: 1.4rem;
+      color: #84878b;
+    }
+  }
+  &-list {
+    margin-top: 4.5rem;
+    display: grid;
+    grid-template-columns: 1.54fr 1fr;
+    grid-template-rows: 20rem 20rem 20rem;
+    grid-template-areas: "h1 h2" "h1 h3" "h1 h4";
+    grid-gap: 1.56rem 1.6rem;
+  }
+  &-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &-item:first-child {
+    grid-area: h1;
+    height: 63.2rem;
+    .stay-image {
+      border-radius: 3rem 0 0 3rem;
+    }
+  }
+  &-item:nth-child(2) {
+    grid-area: h2;
+    height: 20rem;
+    .stay-image {
+      border-radius: 0 3rem 0 0;
+    }
+  }
+  &-item:nth-child(3) {
+    grid-area: h3;
+    height: 20rem;
+  }
+  &-item:last-child {
+    grid-area: h4;
+    height: 20rem;
+    .stay-image {
+      border-radius: 0 0 3rem 0;
+    }
+  }
+  &-infors {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 0 1.7rem;
+    & > span {
+      font-size: 1.4rem;
+      padding: 5px;
+      border-radius: 5px;
+    }
+    span:first-child {
+      background-color: rgba(#38b245, 0.2);
+      color: #38b245;
+    }
+    span:nth-child(2) {
+      background-color: rgba(#fd9704, 0.2);
+      color: #fd9704;
+    }
+    span:nth-child(3) {
+      background-color: rgba(#0b3ba7, 0.2);
+      color: #0b3ba7;
+    }
+    span:nth-child(4) {
+      background-color: rgba(#e96594, 0.2);
+      color: #e96594;
+    }
+    span:nth-child(5) {
+      background-color: rgba(#dc6e3d, 0.2);
+      color: #dc6e3d;
+    }
+  }
+  @media screen and(max-width: 1279px) {
+    &-container {
+      padding: 0 3rem;
+    }
+  }
+  @media screen and(max-width: 1023px) {
+    &-heading {
+      font-size: 3.3rem;
+    }
+    &-list {
+      margin-top: 3.5rem;
+      grid-template-columns: 1fr;
+      grid-template-rows: 60rem 20rem 20rem 20rem;
+      grid-template-areas: "h1" "h2" "h3" "h4";
+      grid-gap: 1.6rem 0;
+    }
+    &-item:first-child {
+      height: 60rem;
+      .stay-image {
+        border-radius: 3rem;
+      }
+    }
+    &-item:nth-child(2) .stay-image {
+      border-radius: 3rem;
+    }
+    &-item:nth-child(3) .stay-image {
+      border-radius: 3rem;
+    }
+    &-item:last-child .stay-image {
+      border-radius: 3rem;
+    }
+    &-infors {
+      & > span {
+        font-size: 2rem;
+      }
+    }
+  }
+  @media screen and(max-width: 767px) {
+    margin-top: 50rem;
+    &-container {
+      padding: 0;
+    }
+    &-heading {
+      text-align: center;
+    }
+    &-info {
+      & > * {
+        font-size: 1.5rem;
+      }
+    }
+    &-list {
+      margin-top: 2.5rem;
+      grid-template-columns: unset;
+      grid-template-rows: unset;
+      grid-template-areas: "h1 h2 h3 h4";
+      grid-auto-columns: 80%;
+      grid-auto-flow: column;
+      grid-gap: 0 1.5rem;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-snap-stop: always;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    &-item {
+      scroll-snap-align: center;
+    }
+    &-item:first-child {
+      height: 20rem;
+    }
+    &-infors {
+      display: block;
+      margin-top: 2rem;
+      & > span {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+      }
+      img {
+        margin: 0 auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+.header {
+  background-color: white;
+  padding: 2rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-link {
+    display: flex;
+    align-items: center;
+  }
+  &-toggle {
+    display: none;
+  }
+  &-text {
+    font-family: $third-font;
+    font-size: 2rem;
+    color: #222529;
+    margin-left: 1rem;
+  }
+  &-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 1.5rem;
+    z-index: 100;
+  }
+  &-money {
+    font-size: 1.4rem;
+    font-family: $secondary-font;
+    color: #84878b;
+  }
+  img {
+    cursor: pointer;
+  }
+  &-author {
+    display: flex;
+    align-items: center;
+    gap: 0 1rem;
+  }
+  &-name {
+    font-family: $secondary-font;
+    font-size: 1.4rem;
+    color: #3b3e44;
+  }
+  @media screen and(max-width: 767px) {
+    &-toggle {
+      display: block;
+      font-size: 2rem;
+      align-self: center;
+    }
+    &-menu {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      display: block;
+      width: 25rem;
+      background: linear-gradient(to right, #2e3192, #1bffff);
+      padding: 2rem;
+      transform: translateX(100%);
+      & > * {
+        padding: 1rem;
+      }
+    }
+    &-menu.is-expand {
+      transform: translateX(0);
+    }
+    &-border {
+      display: none;
+    }
+  }
+}

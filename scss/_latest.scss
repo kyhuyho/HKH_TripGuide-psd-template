@@ -1,0 +1,144 @@
+.latest {
+  margin-top: 6rem;
+  &-container {
+    padding: 0 19.5rem;
+  }
+  &-heading {
+    font-size: 2.4rem;
+    font-family: $four-font;
+    color: #333333;
+  }
+  &-list {
+    margin-top: 3.5rem;
+  }
+  &-item:not(:first-child) {
+    margin-top: 3rem;
+  }
+  &-row {
+    background-color: white;
+    border: 2px solid #e7ecf3;
+    padding: 3.5rem 5.8rem 3rem 3rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-radius: 1.6rem;
+  }
+  &-row-left {
+    display: flex;
+    align-items: flex-start;
+    max-width: 21rem;
+  }
+  &-row-right {
+    max-width: 44.5rem;
+  }
+  &-info {
+    padding-left: 1.2rem;
+  }
+  &-name {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #23262f;
+    margin-bottom: 5px;
+  }
+  &-country {
+    font-size: 1.4rem;
+    color: #84878b;
+    display: block;
+    margin-bottom: 3px;
+  }
+  &-interactive {
+    font-size: 1.2rem;
+    color: #b1b5c3;
+  }
+  &-row-time {
+    display: flex;
+    align-items: center;
+    gap: 0 3.5rem;
+    span {
+      font-size: 1.4rem;
+      color: #84878b;
+    }
+  }
+  &-desc {
+    color: #84878b;
+    margin-top: 1.2rem;
+  }
+  &-click {
+    margin-top: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-cmt,
+  &-like,
+  &-reply {
+    display: inline-block;
+    width: calc(33.33% - 2.1rem);
+    text-align: center;
+    font-size: 1.4rem;
+    color: #145ce6;
+    font-weight: 500;
+    padding: 1rem 0;
+    background-color: rgba(#145ce6, 0.1);
+    border-radius: 2.5rem;
+  }
+  &-all {
+    margin-top: 4rem;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 0 1.5rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #b1b5c4;
+    border-radius: 4.7rem;
+    padding: 1rem 4rem;
+    a {
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: #141416;
+    }
+  }
+  &-image {
+    display: inline-block;
+  }
+  @media screen and(max-width: 1439px) {
+    &-container {
+      padding: 0 15rem;
+    }
+  }
+  @media screen and(max-width: 1279px) {
+    &-container {
+      padding: 0 10rem;
+    }
+  }
+  @media screen and(max-width: 1023px) {
+    &-container {
+      padding: 0 5rem;
+    }
+    &-row {
+      padding: 2rem;
+    }
+    &-row-right {
+      max-width: 35rem;
+    }
+  }
+  @media screen and(max-width: 767px) {
+    &-container {
+      padding: 0;
+    }
+    &-row {
+      display: block;
+    }
+    &-row-left {
+      margin: 0 auto;
+      margin-bottom: 2rem;
+    }
+    &-cmt,
+    &-like,
+    &-reply {
+      width: calc(33.33% - 1rem);
+    }
+  }
+}
